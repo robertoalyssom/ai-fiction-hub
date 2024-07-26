@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+h1 {
+  width: 10%;
+}
+
+.logo-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100%;
+}
+
+.header-title {
+  color: var(--vibrant-coral);
+}
