@@ -5,8 +5,15 @@
   justify-content: center;
   z-index: 1;
   border-radius: 20px;
-  transition: 1s;
+  transition: 0.6s;
+  background: transparent;
+  border: none;
 }
+.card-main:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/* border */
 .card-main::before {
   content: "";
   position: absolute;
@@ -14,7 +21,6 @@
   inset: -2.5px;
   padding: 2px;
   border-radius: 20px;
-  /* background: linear-gradient(to top, var(--blue), var(--light-blue)); */
   background: linear-gradient(
     to right,
     var(--blue),
@@ -27,15 +33,26 @@
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  transition: 1s;
+}
+/* border effect */
+.card-main:hover::before {
+  padding: 2.5px;
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--light-blue),
+    var(--blue)
+  );
+}
+/* image effect*/
+.card-main:hover .card-img {
+  transform: scale(1.07);
+  transition: 2s;
 }
 
-.card-main {
-  position: relative;
-  background: transparent;
-  border-radius: 20px !important;
-  z-index: 1 !important;
-  border: none !important;
+.card-img_ctn {
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .card-img {
