@@ -3,6 +3,7 @@ import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Header from "./components/header";
+import Footer from "./components/footer";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./pages/Home";
 import PostPage from "./pages/Post";
@@ -12,6 +13,7 @@ function Layout() {
     <>
       <Header />
       <Outlet />
+      <Footer />
     </>
   );
 }
