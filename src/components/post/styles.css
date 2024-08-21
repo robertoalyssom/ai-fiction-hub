@@ -1,0 +1,27 @@
+.post-img {
+  border-radius: 13px;
+}
+
+.post-details {
+  font-style: italic;
+  color: var(--light-grey);
+}
+
+.post-link {
+  color: var(--light-blue);
+  transition: 0.3s;
+}
+.post-link:hover {
+  color: var(--vibrant-coral);
+}
+
+.post-txt {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .post-img {
+    border-radius: 0;
+    width: 100vw;
+  }
+}

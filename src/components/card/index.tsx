@@ -13,7 +13,7 @@ function MainCard() {
               <div className="card-img_ctn">
                 <Card.Img
                   variant="top"
-                  src="../../../assets/images/dark-anime-witcher.jpg"
+                  src="../../../assets/images/witch.jpg"
                   className="card-img"
                 />
               </div>
